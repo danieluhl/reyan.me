@@ -1,0 +1,39 @@
+{
+  "name": "reyan.me",
+  "version": "1.0.0",
+  "description": "Site for Reyan",
+  "main": "index.js",
+  "repository": "git@github.com:danieluhl/reyan.me.git",
+  "author": "Dan Uhl <duhl@wayfair.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "puppeteer-core": "^5.3.0"
+  },
+  "scripts": {
+    "dev": "gatsby develop -p 9988 -o",
+    "build": "gatsby build",
+    "serve": "gatsby serve -p 9500 -o"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "babel-plugin-styled-components": "^1.12.0",
+    "gatsby": "^2.29.3",
+    "gatsby-image": "^2.8.0",
+    "gatsby-plugin-mdx": "^1.7.1",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-sharp": "^2.11.2",
+    "gatsby-plugin-styled-components": "^3.7.0",
+    "gatsby-remark-images": "^3.8.1",
+    "gatsby-source-filesystem": "^2.8.1",
+    "gatsby-transformer-sharp": "^2.9.0",
+    "prism-react-renderer": "^1.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-live": "^2.2.3",
+    "react-seo-component": "^2.0.2",
+    "styled-components": "^5.2.1"
+  }
+}
