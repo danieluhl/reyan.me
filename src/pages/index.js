@@ -6,7 +6,13 @@ import styled from 'styled-components';
 import {Layout} from '../components/Layout';
 import {useSiteMetadata} from '../hooks/useSiteMetadata';
 
-const IndexWrapper = styled.main``;
+const IndexWrapper = styled.main`
+  color: #5f3300;
+  background: #faf5f0;
+  border-radius: 2000px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+`;
 
 const PostWrapper = styled.div``;
 
