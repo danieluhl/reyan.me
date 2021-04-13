@@ -1,11 +1,25 @@
 import {MDXProvider} from '@mdx-js/react';
-import React from 'react';
 import {Code} from './src/components/pageElements/code';
+import {createGlobalStyle} from 'styled-components';
+import React, {Fragment} from 'react';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background: #1d2c2c;
+    font-family: Open-Sans, Helvetica, Sans-Serif;
+  }
+  a { color: #94e0e0; }
+  a:link { color: #94e0e0; }
+  a​:active { color: #69cece; }
+  a​:visited { color: #bc99dd; }
+  a​:hover { color: #5cf0f0; }
+`;
 
 const components = {
-  h2: ({children}) => <h2 style={{color: 'rebeccapurple'}}>{children}</h2>,
   'p.inlineCode': props => (
-    <code {...props} style={{backgroundColor: 'lightgrey'}}></code>
+    <code {...props} style={{backgroundColor: '#283636', color: '#fff'}}></code>
   ),
   pre: ({children: {props}}) => {
     if (props.mdxType === 'code') {
@@ -21,5 +35,5 @@ const components = {
 };
 
 export const wrapRootElement = ({element}) => (
-  <MDXProvider components={components}>{element}</MDXProvider>
+  <MDXProvider components={components}><Fragment><GlobalStyle />{element}</Fragment></MDXProvider>
 );

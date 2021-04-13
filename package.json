@@ -7,13 +7,14 @@
   "author": "Dan Uhl <duhl@wayfair.com>",
   "license": "MIT",
   "private": false,
-  "devDependencies": {
-    "puppeteer-core": "^5.3.0"
-  },
   "scripts": {
     "dev": "gatsby develop -p 9988 -o",
+    "watch": "gatsby develop -p 9988 -o",
     "build": "gatsby build",
     "serve": "gatsby serve -p 9500 -o"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^5.3.0"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",

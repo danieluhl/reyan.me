@@ -4,8 +4,9 @@ import {useSiteMetadata} from '../hooks/useSiteMetadata';
 import {Header} from './Header';
 
 const AppStyles = styled.main`
-  max-width: 540px;
   margin: 0 auto;
+  max-width: 800px;
+  color: #f1f1f1;
 `;
 
 export const Layout = ({children}) => {

@@ -7,11 +7,6 @@ import {Layout} from '../components/Layout';
 import {useSiteMetadata} from '../hooks/useSiteMetadata';
 
 const IndexWrapper = styled.main`
-  color: #5f3300;
-  background: #faf5f0;
-  border-radius: 2000px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
 `;
 
 const PostWrapper = styled.div``;
@@ -75,7 +70,7 @@ export const query = graphql`
           cover {
             publicURL
             childImageSharp {
-              sizes(maxWidth: 2000, traceSVG: {color: "#639"}) {
+              sizes(maxWidth: 2000, traceSVG: {color: "#c2b5cf"}) {
                 ...GatsbyImageSharpSizes_tracedSVG
               }
             }
