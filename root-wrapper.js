@@ -6,15 +6,15 @@ import React, {Fragment} from 'react';
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     background: #1d2c2c;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
-  a { color: #94e0e0; }
+  a { color: #94e0e0; text-decoration:none; }
   a:link { color: #94e0e0; }
   a​:active { color: #69cece; }
   a​:visited { color: #bc99dd; }
-  a​:hover { color: #5cf0f0; }
+  a​:hover { color: #5cf0f0; text-decoration:underline; }
 `;
 
 const components = {
